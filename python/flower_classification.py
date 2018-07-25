@@ -74,6 +74,7 @@ def runML():
 	#predictions = knn.predict(X_validation[0])   #this is for scikit 0.19  version issue fix 
 	#predictions = knn.predict([5.9, 3.0, 5.1, 1.8]) 
 	predictions = knn.predict([args.sLength, args.sWidth, args.pLength, args.pWidth]) 
+	#predictions = knn.predict([[args.sLength, args.sWidth, args.pLength, args.pWidth]])(Issue fix for 2D array) 
 	print(predictions[0])
 	return predictions[0]
 
